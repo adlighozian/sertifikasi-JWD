@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- form CSS -->
+    <link rel="stylesheet" href="form.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Sertifikasi | form</title>
+</head>
+
+<body class="bg-light">
+
+    <h1 align="center">Form pengisian</h1>
+    <div class="box">
+        <form class="row" method="POST" onsubmit="return cekForm()">
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="foto" class="form-label">Foto</label>
+                <input class="form-control" type="file" id="foto">
+                <div class="invalid-feedback" id="foto_validation"></div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="nama_lengkap" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="namalengkap" placeholder="Nama Lengkap">
+                <div class="invalid-feedback" id="namalengkap_validation"></div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="nama_panggilan" class="form-label">Nama Panggilan</label>
+                <input type="text" class="form-control" id="namapanggilan" placeholder="Nama Panggilan">
+                <div class="invalid-feedback" id="namapanggilan_validation"></div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="tempat_lahir" class="form-label">Tempat Lahir</label>
+                <input type="text" class="form-control" id="tempatlahir" placeholder="Tempat Lahir">
+                <div class="invalid-feedback" id="tempatlahir_validation"></div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
+                <input type="date" class="form-control" id="tanggallahir">
+                <div class="invalid-feedback" id="tanggallahir_validation"></div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="usia">Usia</label>
+                <input type="number" readonly class="form-control-plaintext" id="usia" value="0">
+                <div class="invalid-feedback" id="usiavalidation"></div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
+                <select id="jeniskelamin" class="form-select">
+                    <option value="#" hidden selected>Pilih Jenis Kelamin</option>
+                    <option value="pria">Pria</option>
+                    <option value="wanita">Wanita</option>
+                </select>
+                <div class="invalid-feedback" id="jeniskelamin_validation"></div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="kota_tinggal" class="form-label">Kota Tinggal</label>
+                <input type="text" class="form-control" id="kotatinggal" placeholder="Kota Tinggal">
+                <div class="invalid-feedback" id="kotatinggal_validation"></div>
+            </div>
+
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+                <div class="invalid-feedback" id="email_validation"></div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="no_hp" class="form-label">No Hp</label>
+                <input type="tel" class="form-control" id="nohp" placeholder="Nomor Handphone">
+                <div class="invalid-feedback" id="nohp_validation"></div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="media_sosial" class="form-label">Media Sosial</label>
+                <select id="mediasosial" class="form-select">
+                    <option value="#" selected hidden>Pilih Media Sosial</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="twitter">Twitter</option>
+                </select>
+                <div class="invalid-feedback" id="mediasosial_validation"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- form JS -->
+    <script src="form.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
