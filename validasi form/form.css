@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900$display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 50px;
+    background: linear-gradient(#2b1055, #7597de);
+    color: wheat;
+}
+
 .box {
     padding: 50px;
     border: black solid;
 }
 
-body {
-    padding: 50px;
+h1 {
+    text-align: center;
+    color: wheat;
+}
+
+label {
+    color: wheat;
 }
